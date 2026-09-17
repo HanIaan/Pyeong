@@ -1,5 +1,6 @@
 package com.pyeong.domain;
 
+import com.pyeong.user.entity.User;
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 

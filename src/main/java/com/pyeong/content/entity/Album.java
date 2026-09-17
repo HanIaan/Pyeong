@@ -1,10 +1,12 @@
-package com.pyeong.domain;
+package com.pyeong.content.entity;
 
 import jakarta.persistence.*;
+import lombok.*;
 
+@Getter
 @Entity
-@Table(name = "books")
-public class Book {
+@Table(name = "albums")
+public class Album {
 
     @Id
     @Column(name = "content_id")
@@ -15,13 +17,8 @@ public class Book {
     @JoinColumn(name = "content_id")
     private Content content;
 
-    private String author;
+    private String artist;
 
-    private String publisher;
-
-    @Column(length = 20)
-    private String isbn;
-
-    protected Book() {
+    protected Album() {
     }
 }

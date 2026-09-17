@@ -1,4 +1,4 @@
-package com.pyeong.domain;
+package com.pyeong.content.entity;
 
 public enum ContentType {
     MOVIE,
